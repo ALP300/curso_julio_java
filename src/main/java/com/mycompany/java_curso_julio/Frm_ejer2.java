@@ -44,7 +44,7 @@ public class Frm_ejer2 extends javax.swing.JFrame {
 
         jLabel3.setText("NÚMERO 3");
 
-        jButton1.setText("jButton1");
+        jButton1.setText("PROCESAR");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -120,7 +120,7 @@ public class Frm_ejer2 extends javax.swing.JFrame {
     int num2= Integer.parseInt(txtNum2.getText());
     int num3= Integer.parseInt(txtNum3.getText());
     
-    if( num1>=num2 && num1>= num3 ){
+    if( num1>=num2 || num1>= num3 ){
         txtA.setText("El número mayor es "+num1);
     }else if (num2>= num1 && num2>= num3){
         txtA.setText("El número mayor es "+num2);
